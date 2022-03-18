@@ -1,10 +1,10 @@
 package pro.sky.java.course2;
 
-public class Bicycle extends Transport{
-
+public class Bicycle extends Transport {
     @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку у велосипеда");
+    public void service() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку у велосипеда");
+        }
     }
-
 }

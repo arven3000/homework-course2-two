@@ -1,15 +1,12 @@
 package pro.sky.java.course2;
 
-public class Car extends Transport implements Engine {
+public class Car extends Transport {
 
     @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку у машины");
+    public void service() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку у машины");
+        }
+        System.out.println("Проверяем двигатель у машины");
     }
-
-    @Override
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель  у машины");
-    }
-
 }

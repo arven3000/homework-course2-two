@@ -1,6 +1,6 @@
 package pro.sky.java.course2;
 
-public class Transport {
+public class Transport implements TransportService {
 
     private String modelName;
     private int wheelsCount;
@@ -21,7 +21,9 @@ public class Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public void service() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку");
+        }
     }
 }
