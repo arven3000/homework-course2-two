@@ -21,9 +21,8 @@ public class Transport implements TransportService {
         this.wheelsCount = wheelsCount;
     }
 
+    @Override
     public void service() {
-        for (int i = 0; i < getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
-        }
+        System.out.println("Проходим техомотр");
     }
 }
